@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <main className='w-full'>
         <Banner/>
-        <VenueCatalog venueJson={getVenues()} />
+        <VenueCatalog venuesJson={getVenues()}/>
         </main>
       </div>
   );

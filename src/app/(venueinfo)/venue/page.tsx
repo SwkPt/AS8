@@ -6,7 +6,7 @@ export default function Car(){
     return(
         <main className="text-center p-5">
             <h1 className="text-xl font-medium" >Select Your Dream Venue</h1>
-            <VenueCatalog venueJson={getVenues()}/>
+            <VenueCatalog venuesJson={getVenues()}/>
         </main>
         
     );

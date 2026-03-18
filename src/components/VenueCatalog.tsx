@@ -1,6 +1,6 @@
 import ProductCard from "./Card";
 import Link from "next/link";
-import { VenueItem, VenueJson } from "../../interface";
+import { VenueItem, VenueJson } from '../../interface';
 export default async function VenueCatalog({venuesJson}:{venuesJson:Promise<VenueJson>}) {
     const venueJsonReady = await venuesJson
     
