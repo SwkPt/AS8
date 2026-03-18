@@ -1,8 +1,9 @@
 import Image from "next/image";
 import getVenue from "@/libs/getVenue";
-export default async function VenueDetailPage({params}:{params: {vid:string}}) {
+export default async function VenueDetailPage({params}:{params: Promise<{vid:string}>}) {
 
-    const venueDetail = await getVenue(params.vid)
+    const { vid } = await params
+    const venueDetail = await getVenue(vid)
 
     return(
         <main className="text-left p-5" >
